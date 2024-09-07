@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Fork</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Urban Fork</div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <a href="#reservation" class="btn-reserve2">Book a Table</a>
+        </ul>
+        <a href="#reservation" class="btn-reserve">Book a Table</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Urban Fork</h1>
+            <p>Experience fine dining like never before</p>
+            <a href="#menu" class="btn-primary">View Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Featured Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Featured Dishes</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="CB.jpg" alt="Dish 1">
+                <h3>Chicken Biryani</h3>
+                <p class="menu-description">Hyderabad style Chicken Biryani</p>
+            </div>
+            <div class="menu-item">
+                <img src="Thali.jpg" alt="Dish 2">
+                <h3>Thali</h3>
+                <p class="menu-description">North Indian style Thali</p>
+            </div>
+            <!-- Add more menu items as needed -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Our restaurant offers the finest dining experience with a focus on locally sourced ingredients and innovative dishes.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="Interior.jpg" alt="Interior Photo">
+            <img src="Dish.jpg" alt="Dish Photo">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Dwarakanagar 3rd lane, Vishakapatnam, Pin code: 530016</p>
+        <p>Email: info@UrbanFork.com</p>
+        <p>Phone: +91 9876543210</p>
+        <div class="map">
+            <!-- Google Map Embed -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18077.97962091161!2d83.30185610176585!3d17.724494437241475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39439c84df302b%3A0xf1d5f8bae6315719!2sAarna%20Multi%20Cuisine%20Restaurant(AARNA%20VIZAG)!5e0!3m2!1sen!2sin!4v1725710796605!5m2!1sen!2sin"
+         width="1280" 
+         height="298" 
+         style="border:0;" 
+         allowfullscreen="" 
+         loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <h2>Book a Table</h2>
+        <form id="reservation-form">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="guests">Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required>
+            <button type="submit" class="btn-reserve">Reserve Now</button>
+        </form>
+        <p id="confirmation-message" class="confirmation-message"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Urban Fork. All rights reserved.</p>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <div class="social-links">
+            <a href="#"><ion-icon name="logo-instagram"></icon-icon></a>
+            <a href="#"><ion-icon name="logo-facebook"></icon-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></icon-icon></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
